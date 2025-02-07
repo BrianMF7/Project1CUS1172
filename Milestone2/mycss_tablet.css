@@ -1,0 +1,237 @@
+#generalInterestContent {
+    display: flex;
+    flex-wrap: wrap;
+              justify-content: space-between;
+    align-items: center; 
+                }
+
+            #generalInterestText {
+   flex: 1 1 60%;
+      padding-left: 20px;
+    padding-right: 20px;
+}
+
+                #generalInterestImage {
+     flex: 1;
+             min-width: 300px;
+    display: flex;
+             justify-content: flex-end; 
+             align-items: center;
+    padding-right: 25px;
+        }
+
+.interestImg {
+    width: 70%;
+    max-width: 600px;
+         padding-right: 30px;
+    }
+
+.interestTitle{
+           padding-left: 50px;
+}   
+
+@media screen and (max-width: 600px) {
+         #generalInterestContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+     #generalInterestImage {
+        min-width: 100%;
+        text-align: center;
+        
+    }
+    .interestTitle{
+        text-align: center;}
+  
+    .interestImg {
+        max-width: 100%;
+    }
+}
+
+#favoriteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.favoirteTitle{
+    text-align: center;
+}
+
+      #favoriteTable {
+    width: 100%;
+    max-width: 800px;
+}
+
+                #favoriteTable table {
+    border-collapse: collapse;
+            width: 100%;
+    max-width: 800px;
+  }
+
+       #favoriteTable th, #favoriteTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+
+#favoriteTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#favoriteTable tr:hover {
+       background-color: #3ade0d;
+    color: white;
+}
+
+           #favoriteTable th {
+    padding-top: 12px;
+         padding-bottom: 12px;
+    text-align: left;
+    background-color: green;
+    color: white;
+}
+
+#favoriteVideos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+#favoriteVideos iframe {
+    flex: 1;
+    max-width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #favoriteContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #favoriteTable, #favoriteVideos {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #favoriteVideos iframe {
+        width: 100%;
+        max-width: 560px;
+    }
+}
+
+                    #websites, #projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#websites h2, #projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.websiteList, .projectList {
+    list-style-type: decimal;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.websiteItem, .projectItem {
+    background-color: #fff;
+    margin-bottom: 10px;
+       padding: 15px;
+        border-radius: 5px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.websiteItem:hover, .projectItem:hover {
+    background-color: #3ade0d;
+    color: black;
+}
+
+.websiteDescription, .projectDescription {
+          font-size: 16px;
+    color: black;
+    margin-top: 10px;
+}
+
+ @media (max-width: 768px) {
+    #websites, #projects {
+        padding: 10px;
+    }
+
+    #websites h2, #projects h2 {
+        font-size: 20px;
+    }
+
+    .websiteItem, .projectItem {
+        padding: 10px;
+    }
+
+                   .websiteDescription, .projectDescription {
+        font-size: 14px;
+    }
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.videoContainer video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .videoContainer {
+        padding: 10px;
+    }
+
+    .videoContainer video {
+        max-width: 100%;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+             position: relative;
+    bottom: 0;
+}
+
+footer h2, footer form {
+    margin: 10px 0;
+}
+
+footer form {
+    display: inline-block;
+}
+
+footer:hover {
+    background-color: #3ade0d;
+}
+
+                    @media (max-width: 600px) {
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media print {
+    .videoContainer {
+        display: none;
+    }
+}
