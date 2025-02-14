@@ -1,0 +1,31 @@
+#myName {
+    display: flex;
+    justify-content: center;
+       align-items: center;
+    text-align: center;
+    margin: 20px 0; 
+    }
+       
+       
+       .full-width-footer {
+    background-image: url('https://wallpapers.com/images/hd/light-green-background-3m1s3691d543m9xn.jpg');
+    background-attachment: fixed;
+        background-position: center;
+                   background-repeat: no-repeat;
+    background-size: cover;
+       width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+                text-align: center;
+    padding: 20px; 
+        }
+
+
+        .center-badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0; 
+        }
